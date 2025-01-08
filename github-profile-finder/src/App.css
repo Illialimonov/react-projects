@@ -1,0 +1,106 @@
+/* Wrapper for entire content */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Light background color */
+}
+
+/* Main container */
+.container {
+  text-align: center;
+}
+
+/* Search bar container */
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+.search input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  font-size: 16px;
+}
+
+a {
+  color: blue;
+  text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+  color: darkblue; /* Changes color on hover */
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Button styling */
+.search button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #0056b3;
+}
+
+/* GitHub box styling */
+.github-box {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Enables positioning for child elements */
+}
+
+/* Profile link */
+.github-box a {
+  position: absolute; /* Position link over the image */
+  top: 10px; /* Adjusts position relative to the container */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the link horizontally */
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.8); /* Slight background for readability */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.github-box a:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+/* Profile image */
+.github-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 40px; /* Adds space to accommodate the link */
+}
+
+/* Profile text */
+.github-box p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
